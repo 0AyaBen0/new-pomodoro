@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neko-Pomodoro :3</title>
+    <!------fonts------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jersey+15&display=swap" rel="stylesheet">  
+
+    <!------icons------>
+    <script src="https://kit.fontawesome.com/76629e1a19.js" crossorigin="anonymous"></script>
+    <!------css------>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <section>
+        <div class="container">
+            <img src=""> <!-- add image later -->
+            <h1>Neko Pomodoro</h1>
+
+            <div class="panel">
+                <p id="work" class="">Work</p>
+                <p id="break" class="">Break</p>
+            </div>
+
+            <div class="timer">
+                <div class="circle">
+                    <div class="time">
+                        <p id="minutes">24</p>
+                        <p>:</p>
+                        <p id="seconds">59</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="controls">
+                <button id="start" onclick="start()"><i class="fa-solid fa-heart"></i></button>
+                <a id="reset" href=""><i class="fa-solid fa-rotate-right"></i></a>
+            </div>
+
+        </div>
+
+    </section>
+    
+    <!------js------>
+    <script src="main.js"></script>
+</body>
+</html>

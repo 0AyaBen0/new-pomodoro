@@ -1,0 +1,140 @@
+:root {
+    font-size: 62.5%;
+
+    --color-primary: #ffc8dd;
+    --color-secondary: #210b2c;
+    --color-font: #012a4a;
+
+    --color-shadow: #5e548e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: var(--color-primary);
+    font-size: 25px;
+    font-family: "Jersey 15", sans-serif;
+}
+
+p, i, h1 {
+    color: var(--color-font);
+    font-weight: bold;
+}
+
+i, h1 {
+    font-size: 50px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+img{
+    width: 180px;
+    height: 180px;
+}
+
+.container {
+    width: min(700px, 100%);
+    margin-inline: auto;
+    padding-inline: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    width: 300px;
+    margin-block: 50px;
+    padding: 10px;
+    border-radius: 150px;
+    -webkit-box-shadow: 0px 0px 15px 10px var(--color-shadow); 
+    box-shadow: 0px 0px 15px 10px var(--color-shadow);
+    margin-top: 25px;
+}
+
+.panel p {
+    opacity: .8;
+    transition: 1s ease-in;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 15px 10px var(--color-shadow); 
+    box-shadow: 0px 0px 15px 10px var(--color-shadow);
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    position: relative;
+
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+}
+
+.time {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.time p {
+    font-size: 60px;
+}
+
+.time p:nth-of-type(2) {
+    position: relative;
+    top: -8px;
+    margin-inline: 10px;
+}
+
+.controls button {
+    border: none;
+    background-color: none;
+    cursor: pointer;
+}
+
+button{
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.controls #reset {
+    display: none;
+}
+
+.panel p.active {
+    opacity: 1;
+    color: var(--color-secondary);
+}
