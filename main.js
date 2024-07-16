@@ -6,7 +6,7 @@ let breakTime = 4;
 
 let seconds = "59";
 
-let audio = new Audio(""); //add audio later
+let audio = new Audio("audio/Meow Sound Effect.mp3"); //add audio later
 let play = document.getElementById('start');
 
 window.onload = () => {
