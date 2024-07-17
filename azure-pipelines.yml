@@ -14,3 +14,7 @@ steps:
     rootFolderOrFile: '$(build.sourcesDirectory)'
     includeRootFolder: false
 - task: PublishBuildArtifacts@1
+- task: IISWebAppDeploymentOnMachineGroup@0
+  inputs:
+    WebSiteName: 'pomodoro'
+    Package: '$(System.DefaultWorkingDirectory)\**\*.zip'
